@@ -40,6 +40,9 @@ namespace WebAPI.Controllers
                 DataTable table = new DataTable();
 
                 string _doj = emp.DOJ.ToString().Split(' ')[0];
+
+
+
                 string query = @"insert into dbo.Employees (EmployeeName,Department,MailID,DOJ) values (
             '" + emp.EmployeeName + @"',
             '" + emp.Department + @"',
